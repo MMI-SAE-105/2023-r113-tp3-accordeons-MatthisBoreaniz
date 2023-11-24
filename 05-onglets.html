@@ -10,9 +10,44 @@
   <body>
     <h1>Onglets</h1>
     <a href="index.html"><button>Accueil du site</button></a>
+    <h2>les différents items</h2>
+    
     <div id="onglets" x-data="{
       ouvert : 1,
      }">
-
+<div>
+  <div role="tabpanel" @click="ouvert = 1" >
+    <button>Panneau 1</button>
+    <div x-show="ouvert === 1"> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam distinctio ex est enim tempora in animi aliquam doloremque soluta eos vitae magnam fuga, voluptates illo nobis ab optio, omnis necessitatibus!</p>
+    <ul role="tablist">
+      <li role="tab">Onglet 1</li>
+      <li role="tab">Onglet 2</li>
+      <li role="tab">Onglet 3</li>
+    </ul>
+    </div>
+  </div>
+  <div role="tabpanel" @click="ouvert = 2" >
+    <button>Panneau 2</button>
+    <div x-show="ouvert === 2"> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam distinctio ex est enim tempora in animi aliquam doloremque soluta eos vitae magnam fuga, voluptates illo nobis ab optio, omnis necessitatibus!</p>
+    <ul role="tablist">
+      <li role="tab">Onglet 1</li>
+      <li role="tab">Onglet 2</li>
+      <li role="tab">Onglet 3</li>
+    </ul>
+    </div>
+  </div>
+  <div role="tabpanel" @click="ouvert = 3" >
+    <button>Panneau 3</button>
+    <div x-show="ouvert === 3"> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam distinctio ex est enim tempora in animi aliquam doloremque soluta eos vitae magnam fuga, voluptates illo nobis ab optio, omnis necessitatibus!</p>
+    <ul role="tablist">
+      <li role="tab">Onglet 1</li>
+      <li role="tab">Onglet 2</li>
+      <li role="tab">Onglet 3</li>
+    </ul>
+    </div>
+  </div>
   </body>
 </html>
