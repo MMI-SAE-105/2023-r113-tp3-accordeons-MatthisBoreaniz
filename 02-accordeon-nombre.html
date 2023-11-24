@@ -9,6 +9,7 @@
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <a href="index.html"><button>Accueil du site</button></a>
     <div class="accordeon" x-data="{ouvert:0}">
       <section>
         <button @click="ouvert=1">bouton 1</button>
@@ -23,6 +24,5 @@
         <p x-show="ouvert===3"x-transition.scale.origin.left>Nisi suscipit id eum assumenda consequuntur, dolor odio temporibus rem ullam accusamus veniam repellat voluptas blanditiis earum perferendis illum sapiente aperiam nulla mollitia pariatur facere recusandae! Facilis fuga alias nostrum?</p>
       </section>
     </div>
-    <a href="index.html">Accueil du site</a>
   </body>
 </html>
